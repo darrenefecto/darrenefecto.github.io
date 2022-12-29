@@ -255,7 +255,7 @@ footer p {
     
     .introduction h1 {
         margin: 20px 0 20px;
-        font-size: 53px;
+        font-size: 50px;
         background-image: 
         linear-gradient(to left, red,orange,yellow,green,blue,indigo,violet); 
         -webkit-background-clip: text;
@@ -322,7 +322,7 @@ footer p {
 
     .materials-title h2 {
         color: #fff;
-        font-size: 40px;
+        font-size: 35px;
         width: auto;
         margin: 30px auto;
         text-align: center;
