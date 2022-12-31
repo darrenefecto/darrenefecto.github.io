@@ -19,7 +19,11 @@ body {
     background-size: cover;
 }
 
-nav {
+.mobile-nav {
+    display: none;
+}
+
+.nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -28,23 +32,29 @@ nav {
     padding-right: 8%;
 }
 
-nav ul li {
+.nav ul li {
     list-style-type: none;
     display: inline-block;
     padding: 10px 25px;
 }
 
-nav ul li a {
+.nav ul li a {
     color: #fff;
     text-decoration: none;
     font-weight: bold;
     text-transform: capitalize;
 }
 
-nav ul li a:hover {
+.nav ul li a:hover {
     color: rgb(189, 189, 189);
     transition: .4s;
 }
+
+
+
+
+
+
 
 #logo {
     color: #fff;
@@ -255,6 +265,38 @@ footer img {
         height: auto;
     }
 
+
+    .nav {
+        display: none;
+    }
+
+
+    .mobile-nav {
+        display: block;
+        overflow: hidden;
+        background-color: #1313133f;
+        position: relative;
+    }
+
+    .mobile-nav #links {
+        display: none;
+    }
+
+    .mobile-nav a {
+        color: white;
+        padding: 15px 20px;
+        text-decoration: none;
+        font-size: 16px;
+        display: block;
+    }
+
+    .mobile-nav a.icon {
+        background-color: #1313134f;
+        display: block;
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
 
 
     .introduction {

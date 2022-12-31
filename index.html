@@ -7,21 +7,33 @@
     <title>Darrenefecto | Home</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<body onload="getLanguage()"> 
+<body onload="mobileDetect()"> 
     <div class="background">
-        <nav>
+        <nav class="nav">
             <img src="./images/logo.png" alt="Darrenefecto" id="logo">
             <ul>
-                <li><a href="#about" id="nav-txt-1">About me</a></li>
-                <li><a href="#materials" id="nav-txt-2">Materials</a>
-                <li><a href="#socials" id="nav-txt-3">Socials</a></li>
+                <li><a href="#about">About me</a></li>
+                <li><a href="#materials">Materials</a></li>
+                <li><a href="#socials">Socials</a></li>
             </ul>
         </nav>
 
+        <div class="mobile-nav">
+            <a class="active"><img src="./images/logo.png" alt="Darrenefecto" style="width: 150px; height: auto;"></a>
+            <div id="links">
+                <a href="#about">About me</a>
+              <a href="#materials">Materials</a>
+              <a href="#socials">Socials</a>
+            </div>
+            <a class="icon" onclick="MobileMenu()">
+              <img src="./images/icons/menu.png" alt="" style="width: 20px; height: auto;">
+            </a>
+        </div>
+
         <div class="introduction">
-            <h4 id="i-txt-1">Hello! My name is</h4>
+            <h4>Hello! My name is</h4>
             <h1>Darrenefecto</h1>
-            <h3 id="i-txt-2">I'm a Game developer & 3D-Artist</h3>
+            <h3>I'm a Game developer & 3D-Artist</h3>
         </div>
 
     </div>
@@ -30,9 +42,9 @@
         <div class="about-content">
             <img src="./images/Darren.png" alt="Image not found...">
             <div class="about-text">
-                <h2 id="am-txt-1">About Me</h2>
-                <h5 id="am-txt-2">Game Developer & 3D-Artist</h5>
-                <p id="am-txt-3">I'm a game developer and I only program my games with visual studio using the c++ programming language.<br>
+                <h2>About Me</h2>
+                <h5>Game Developer & 3D-Artist</h5>
+                <p>I'm a game developer and I only program my games with visual studio using the c++ programming language.<br>
                     I'm also a 3D artist. I only deal with the modeling and the textures.
                     I model my objects using blender.<br>
                     On good days, I go out and shoot some textures.
@@ -44,7 +56,7 @@
 
     <section id="materials">
         <div class="materials-title">
-            <h2 id="mat-txt-1">My Materials</h2>
+            <h2>My Materials</h2>
         </div>
 
         <div class="materials-content">
@@ -60,7 +72,7 @@
     </section>
 
     <footer>
-        <p id="sc-txt-1">Darrenefecto on socials</p>
+        <p>Darrenefecto on socials</p>
         <div id="socials">
             <a target="_blank" href="https://www.youtube.com/@darrenefecto?sub_confirmation=1"><img src="./images/icons/youtube.png" alt="YT"></a>
             <a target="_blank" href="https://www.instagram.com/darrenefecto"><img src="./images/icons/instagram.png" alt="IG"></a>
