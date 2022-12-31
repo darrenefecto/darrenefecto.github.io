@@ -211,15 +211,24 @@ footer {
     border: 1px solid #fff;
 }
 
-#socials a:hover {
-    transform: scale(1.3);
-    transition: .3s;
-}
 
 footer p {
     font-size: 30px;
     margin-bottom: 20px;
     font-weight: bold;
+}
+
+@media (min-width: 1000px) {
+    #socials a:hover {
+        transform: scale(1.3);
+        transition: .3s;
+    }
+    
+}
+
+footer img {
+    width: 35px;
+    height: auto;
 }
 
 #license {
@@ -245,7 +254,6 @@ footer p {
         width: 100%;
         height: auto;
     }
-
 
 
 
@@ -307,7 +315,7 @@ footer p {
     
     .about-text h2 {
         color: #fff;
-        font-size: 75px;
+        font-size: 60px;
         text-transform: capitalize;
         margin-bottom: 20px;
     }
@@ -338,4 +346,26 @@ footer p {
         object-fit: contain;
         flex-shrink: 0;
     }
+
+    footer p {
+        font-size: 25px;
+        margin-bottom: 20px;
+        font-weight: bold;
+    }
+
+    footer img {
+        width: 35px;
+        height: auto;
+    }
+
+
+
+
+    nav ul li a:hover {
+        color: #fff;
+    }
+    #socials a:hover {
+        color: #fff;
+    }
+
 }
