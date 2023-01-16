@@ -1,0 +1,245 @@
+* {
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+body {
+    background-color: #191919;
+    color: #fff;
+    font-family: sans-serif;
+}
+
+.background {
+    width: 100%;
+    height: 100vh;
+    background-image: url(../images/background.png);
+    background-position: center;
+    background-size: cover;
+}
+
+
+
+.mobile-nav {
+    display: none;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 45px;
+    padding-left: 8%;
+    padding-right: 8%;
+}
+
+.nav ul li {
+    list-style-type: none;
+    display: inline-block;
+    padding: 10px 25px;
+}
+
+.nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.nav ul li a:hover {
+    color: rgb(189, 189, 189);
+    transition: .4s;
+}
+
+#logo {
+    color: #fff;
+    width: 30%;
+    height: 30%;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+
+
+
+
+#gameEngine {
+    width: 100%;
+    padding: 100px 0;
+    background-color: #191919;
+}
+
+.gameEngine-content {
+    max-width: 95%;
+    width: 1130px;
+    display: flex;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.gameEngine-text {
+    width: 550px;
+}
+
+.gameEngine-text p {
+    color: rgb(216, 216, 216);
+    letter-spacing: 1px;
+    line-height: 28px;
+    font-size: 18px;
+    margin-bottom: 45px;
+}
+
+.gameEngine-text h2 {
+    color: #fff;
+    font-size: 75px;
+    text-transform: capitalize;
+    margin-bottom: 20px;
+}
+
+.gameEngine-text h5 {
+    color: #fff;
+    letter-spacing: 2px;
+    font-size: 22px;
+    margin-bottom: 25px;
+}
+
+
+/* Mobile friendly */
+@media screen and (max-width: 1000px) {
+    body {
+        width: 100%;
+        height: auto;
+    }
+
+
+    .nav {
+        display: none;
+    }
+
+    .mobile-nav {
+        display: block;
+        overflow: hidden;
+        background-color: #1313133f;
+        position: relative;
+    }
+    .mobile-nav #links {
+        display: none;
+    }
+    .mobile-nav a {
+        color: white;
+        padding: 15px 20px;
+        text-decoration: none;
+        font-size: 16px;
+        display: block;
+    }
+    .mobile-nav a.icon {
+        background-color: #1313134f;
+        display: block;
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+
+
+    
+    .gameEngine-content {
+        max-width: 95%;
+        width: 1130px;
+        display: flex;
+        margin: 0 auto;
+        align-items: center;
+        justify-content: space-around;
+    }
+    
+    .gameEngine-text {
+        width: 550px;
+    }
+    
+    .gameEngine-text p {
+        color: rgb(216, 216, 216);
+        letter-spacing: 1px;
+        line-height: 28px;
+        font-size: 18px;
+        margin-bottom: 45px;
+    }
+    
+    .gameEngine-text h2 {
+        color: #fff;
+        font-size: 60px;
+        text-transform: capitalize;
+        margin-bottom: 20px;
+    }
+    
+    .gameEngine-text h5 {
+        color: #fff;
+        letter-spacing: 2px;
+        font-size: 22px;
+        margin-bottom: 25px;
+    }
+
+    .button {
+        transition: all .2s ease-in-out;
+    }
+
+    .button:before {
+        display: none;
+    }
+
+    .button:hover {
+        transform: scale(1.1);
+	    transition: .1s;
+    }
+}
+
+.content {
+    align-items: center;
+    justify-content: space-around;
+    display: flex;
+    margin: 50% auto;
+}
+
+
+.button {
+    display: inline-block;
+    padding: 0.75rem 1.25rem;
+    border-radius: 10rem;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 18px;
+    letter-spacing: 2px;
+    transition: all 0.3s;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    border: none;
+    background-color: #191919;
+  }
+.button:after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #282828;
+    border-radius: 10rem;
+    z-index: -2;
+}
+.button:before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0%;
+    height: 100%;
+    background-color: #191919;
+    transition: all 0.3s;
+    border-radius: 10rem;
+    z-index: -1;
+  }
+.button:hover {
+    color: #fff;
+}
+.button:hover:before {
+    width: 100%;
+}

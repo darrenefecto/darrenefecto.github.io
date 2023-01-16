@@ -4,13 +4,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Darrenefecto | Home</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Darrenefecto | Main</title>
+    <link rel="stylesheet" href="./style.css">
 </head>
-<body onload="mobileDetect()"> 
+<body> 
     <div class="background">
         <nav class="nav">
-            <img src="./images/logo.png" alt="Darrenefecto" id="logo">
+            <img src="./images/logo.png" alt="Darrenefecto" id="logo" onclick="transfer(true)">
             <ul>
                 <li><a href="#about">About me</a></li>
                 <li><a href="#materials">Materials</a></li>
@@ -19,7 +19,7 @@
         </nav>
 
         <div class="mobile-nav">
-            <a class="active"><img src="./images/logo.png" alt="Darrenefecto" style="width: 150px; height: auto;"></a>
+            <a class="active"><img src="./images/logo.png" alt="Darrenefecto" style="width: 150px; height: auto;" onclick="transfer(true)"></a>
             <div id="links">
                 <a href="#about">About me</a>
               <a href="#materials">Materials</a>
@@ -56,17 +56,28 @@
 
     <section id="materials">
         <div class="materials-title">
-            <h2>My Materials</h2>
+            <h2>My Materials:</h2>
         </div>
 
         <div class="materials-content">
             <div class="materials-box">
-                <img src="./images/Brick.png" alt="Image couldn't or need to load...">
-                <img src="./images/Tree.png" alt="Image couldn't or need to load...">
-                <img src="./images/Wood.png" alt="Image couldn't or need to load...">
-                <img src="./images/Stone.png" alt="Image couldn't or need to load...">
-                <img src="./images/White-Brick.png" alt="Image couldn't or need to load...">
-                <img src="./images/Grass.png" alt="Image couldn't or need to load...">
+                <!-- Procedual -->
+                <img src="./images/materials/magma.png" alt="Image couldn't or need to load...">
+                <img src="./images/materials/ice.png" alt="Image couldn't or need to load...">
+                <img src="./images/materials/concrete.png" alt="Image couldn't or need to load...">
+                <img src="./images/materials/mud.png" alt="Image couldn't or need to load...">
+                <img src="./images/materials/dark-wood.png" alt="Image couldn't or need to load...">
+                <img src="./images/materials/leather.png" alt="Image couldn't or need to load...">
+                <img src="./images/materials/cardboard.png" alt="Image couldn't or need to load...">
+                <img src="./images/materials/skin.png" alt="Image couldn't or need to load...">
+                
+                <!-- Texture -->
+                <img src="./images/materials/brick.png" alt="Image couldn't or need to load...">
+                <img src="./images/materials/tree.png" alt="Image couldn't or need to load...">
+                <img src="./images/materials/stone.png" alt="Image couldn't or need to load...">
+                <img src="./images/materials/w-brick.png" alt="Image couldn't or need to load...">
+                <img src="./images/materials/grass.png" alt="Image couldn't or need to load...">
+
             </div>
         </div>
     </section>

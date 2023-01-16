@@ -1,11 +1,3 @@
-function mobileDetect() {
-    if(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)){
-        console.log("mobile device");
-    }else{
-        console.log("not mobile device");
-    }
-}
-
 function MobileMenu() {
     var x = document.getElementById("links");
     if (x.style.display === "block") 
@@ -16,4 +8,14 @@ function MobileMenu() {
     {
         x.style.display = "block";
     }
+}
+
+function transfer(site)
+{   
+    if (site)
+        location.href = "/websites/more.html";
+    
+    if (!site)
+        location.href = "../index.html";
+
 }
