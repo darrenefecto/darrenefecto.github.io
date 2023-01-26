@@ -19,3 +19,25 @@ function transfer(site)
         location.href = "./index.html";
 
 }
+
+function cacheData() {
+    var currentUrl = window.location.href;
+    const cacheName = "myCache";
+    caches.open(cacheName)
+      .then(cache => {
+        cache.match(currentUrl)
+          .then(response => {
+            if (response) {
+              return response;
+            } else {
+              return fetch(currentUrl)
+                .then(response => {
+                  cache.put(currentUrl, response);
+                  return response;
+                });
+            }
+          });
+      });
+  }
+  
+  
