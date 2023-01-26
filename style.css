@@ -14,7 +14,7 @@ body {
 .background {
     width: 100%;
     height: 100vh;
-    background-image: url(./images/background.png);
+    background-image: url(./images/background.webp);
     background-position: center;
     background-size: cover;
 }
@@ -180,13 +180,11 @@ body {
 
 .materials-box img {
     width: 350px;
-    height: auto;
+    height: 283px;
     aspect-ratio: 3/2;
     object-fit: contain;
     flex-shrink: 0;
 }
-
-
 
 
 
@@ -383,7 +381,7 @@ footer img {
 
     .materials-box img {
         width: 250px;
-        height: auto;
+        height: 283px;
         aspect-ratio: 3/2;
         object-fit: contain;
         flex-shrink: 0;
