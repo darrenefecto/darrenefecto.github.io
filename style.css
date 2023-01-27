@@ -298,15 +298,15 @@ footer img {
 
 
     .introduction {
-        position: absolute;
-        top: 40%;
+        position: relative;
+        top: 30%;
         left: 8%;
-        transform: translateY(-40%);
+        transform: translateY(-30%);
     }
     
     .introduction h1 {
         margin: 20px 0 20px;
-        font-size: 50px;
+        font-size: 40px;
         background-image: 
         linear-gradient(to left, red,orange,yellow,green,blue,indigo,violet); 
         -webkit-background-clip: text;
@@ -355,7 +355,7 @@ footer img {
     
     .about-text h2 {
         color: #fff;
-        font-size: 60px;
+        font-size: 45px;
         text-transform: capitalize;
         margin-bottom: 20px;
     }
@@ -388,7 +388,7 @@ footer img {
     }
 
     footer p {
-        font-size: 25px;
+        font-size: 20px;
         margin-bottom: 20px;
         font-weight: bold;
     }

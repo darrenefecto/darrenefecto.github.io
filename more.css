@@ -76,6 +76,7 @@ body {
     margin: 0 auto;
     align-items: center;
     justify-content: space-around;
+    text-transform: capitalize;
 }
 
 .gameEngine-text {
@@ -113,6 +114,14 @@ body {
     margin: 30% auto;
 }
 
+img {
+    width: 150px;
+    height: 150px;
+    aspect-ratio: 3/2;
+    object-fit: contain;
+    flex-shrink: 0;
+    
+}
 
 .button {
     display: inline-block;
@@ -233,6 +242,15 @@ body {
         letter-spacing: 2px;
         font-size: 22px;
         margin-bottom: 25px;
+    }
+
+    img {
+        width: 100px;
+        height: 100px;
+        aspect-ratio: 3/2;
+        object-fit: contain;
+        flex-shrink: 0;
+        
     }
 
     .button {
