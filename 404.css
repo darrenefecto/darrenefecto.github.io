@@ -1,0 +1,164 @@
+* {
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+body {
+    background-color: #191919;
+    color: #fff;
+    font-family: sans-serif;
+}
+
+.background {
+    width: 100%;
+    height: 100vh;
+    background-image: url(./images/background.webp);
+    background-position: center;
+    background-size: cover;
+}
+
+.mobile-nav {
+    display: none;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 45px;
+    padding-left: 8%;
+    padding-right: 8%;
+}
+
+.nav ul li {
+    list-style-type: none;
+    display: inline-block;
+    padding: 10px 25px;
+}
+
+.nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+
+.nav ul li a:hover {
+    color: rgb(189, 189, 189);
+    transition: .4s;
+}
+
+
+
+
+
+
+
+#logo {
+    color: #fff;
+    width: 30%;
+    height: 30%;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+
+
+.introduction {
+    position: absolute;
+    top: 40%;
+    left: 8%;
+    transform: translateY(-40%);
+}
+
+.introduction h1 {
+    margin: 20px 0 20px;
+    font-size: 75px;
+    color: rgb(218, 218, 218);
+}
+
+.introduction h3 {
+    color: #fff;
+    margin-bottom: 50px;
+    font-size: 35px;
+}
+
+.introduction h4 {
+    color: rgb(218, 218, 218);
+    letter-spacing: 2px;
+    font-size: 40px;
+}
+
+
+
+/* Mobile friendly */
+@media screen and (max-width: 1000px) {
+    body {
+        width: 100%;
+        height: auto;
+    }
+
+
+    .nav {
+        display: none;
+    }
+
+
+    .mobile-nav {
+        display: block;
+        overflow: hidden;
+        background-color: #1313133f;
+        position: relative;
+    }
+
+    .mobile-nav #links {
+        display: none;
+    }
+
+    .mobile-nav a {
+        color: white;
+        padding: 15px 20px;
+        text-decoration: none;
+        font-size: 16px;
+        display: block;
+    }
+
+    .mobile-nav a.icon {
+        background-color: #1313134f;
+        display: block;
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+
+
+    .introduction {
+        position: relative;
+        top: 30%;
+        left: 8%;
+        transform: translateY(-30%);
+    }
+    
+    .introduction h1 {
+        margin: 20px 0 20px;
+        font-size: 40px;
+        color: rgb(218, 218, 218);
+    }
+    
+    .introduction h3 {
+        color: #fff;
+        margin-bottom: 50px;
+        font-size: 25px;
+    }
+    
+    .introduction h4 {
+        color: rgb(218, 218, 218);
+        letter-spacing: 2px;
+        font-size: 30px;
+    }
+
+    nav ul li a:hover {
+        color: #fff;
+    }
+}

@@ -17,7 +17,6 @@ body {
     background-image: url(./images/background.webp);
     background-position: center;
     background-size: cover;
-    overflow: hidden;
 }
 
 
@@ -45,6 +44,7 @@ body {
     color: #fff;
     text-decoration: none;
     font-weight: bold;
+    text-transform: capitalize;
 }
 
 .nav ul li a:hover {
@@ -124,6 +124,7 @@ img {
 }
 
 .button {
+    position: relative;
     display: inline-block;
     padding: 0.75rem 1.25rem;
     border-radius: 10rem;
@@ -132,7 +133,6 @@ img {
     font-size: 18px;
     letter-spacing: 2px;
     transition: all 0.3s;
-    position: relative;
     overflow: hidden;
     z-index: 1;
     border: none;
