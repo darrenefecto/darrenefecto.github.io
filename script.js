@@ -13,10 +13,10 @@ function MobileMenu() {
 function transfer(site)
 {   
     if (site)
-        location.href = "./more.html";
+        location.href = "more.html";
     
     if (!site)
-        location.href = "./index.html";
+        location.href = "index.html";
 
 }
 
