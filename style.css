@@ -127,6 +127,7 @@ body {
     transform: translateY(-250%);
     transition: .2s all;
     overflow: hidden;
+    cursor: pointer;
 }
 
 .btn-learn:hover {
