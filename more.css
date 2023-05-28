@@ -17,10 +17,7 @@ body {
     background-image: url(./images/background.webp);
     background-position: center;
     background-size: cover;
-    overflow-y: hidden;
 }
-
-
 
 .mobile-nav {
     display: none;
@@ -33,6 +30,7 @@ body {
     padding-top: 45px;
     padding-left: 8%;
     padding-right: 8%;
+    background-color: #1313135e;
 }
 
 .nav ul li {
@@ -46,11 +44,11 @@ body {
     text-decoration: none;
     font-weight: bold;
     text-transform: capitalize;
+    transition: .3s;
 }
 
 .nav ul li a:hover {
     color: rgb(189, 189, 189);
-    transition: .4s;
 }
 
 #logo {
@@ -58,9 +56,70 @@ body {
     width: 30%;
     height: 30%;
     letter-spacing: 1px;
+    margin-top: -25px;
     cursor: pointer;
 }
 
+
+
+.btn-back-div {
+    display: inline-table;
+    position: absolute;
+    top: 75%;
+    transform: translateY(-75%);
+}
+
+/* Yoinked from CodePen, modified by SelfMadeSystem */
+#codepen-button {
+    display: block;
+    cursor: pointer;
+    color: white;
+    margin: 0 auto;
+    position: relative;
+    text-decoration: none;
+    font-weight: 600;
+    border-radius: 6px;
+    overflow: hidden;
+    padding: 3px;
+    isolation: isolate;
+}
+
+#codepen-button::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 400%;
+    height: 100%;
+    background: linear-gradient(115deg,#4fcf70,#fad648,#a767e5,#12bcfe,#44ce7b);
+    background-size: 25% 100%;
+    animation: an-at-keyframe-css-at-rule-that-translates-via-the-transform-property-the-background-by-negative-25-percent-of-its-width-so-that-it-gives-a-nice-border-animation_-We-use-the-translate-property-to-have-a-nice-transition-so-it_s-not-a-jerk-of-a-start-or-stop .75s linear infinite;
+    animation-play-state: var(--animationPlayState);
+    translate: -5% 0%;
+    transition: translate 0.25s ease-out;
+}
+  
+#codepen-button:hover::before {
+    animation-play-state: running;
+    transition-duration: 0.75s;
+    translate: 0% 0%;
+}
+  
+@keyframes an-at-keyframe-css-at-rule-that-translates-via-the-transform-property-the-background-by-negative-25-percent-of-its-width-so-that-it-gives-a-nice-border-animation_-We-use-the-translate-property-to-have-a-nice-transition-so-it_s-not-a-jerk-of-a-start-or-stop {
+    to {
+      transform: translateX(-25%);
+    }
+}
+  
+#codepen-button span {
+    position: relative;
+    display: block;
+    padding: 1rem 1.5rem;
+    font-size: 1.1rem;
+    background: #000;
+    border-radius: 3px;
+    height: 100%;
+}
 
 
 
@@ -115,13 +174,12 @@ body {
     margin: 30% auto;
 }
 
-img {
+.icons {
     width: 150px;
     height: 150px;
     aspect-ratio: 3/2;
     object-fit: contain;
-    flex-shrink: 0;
-    
+    flex-shrink: 0; 
 }
 
 .button {
@@ -170,8 +228,6 @@ img {
 }
 
 
-
-
 /* Mobile friendly */
 @media screen and (max-width: 1000px) {
     body {
@@ -207,7 +263,6 @@ img {
         right: 0;
         top: 0;
     }
-
 
     
     .gameEngine-content {

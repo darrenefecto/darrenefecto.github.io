@@ -9,7 +9,7 @@
     <link rel="shortcut icon" href="./images/icons/logo.ico" type="image/x-icon">
     <meta name="description" content="You can learn or play on this Page...">
 </head>
-<body onload="cacheData();">
+<body onload="cacheData(); mobileDetect();">
     <div class="background">
         <nav class="nav">
             <img src="./images/logo.webp" alt="Darrenefecto" id="logo" onclick="transfer(false)">
@@ -28,8 +28,10 @@
             </a>
         </div>
 
-        <div class="content">
-            <button class="button" onclick="transfer(false)">Goto main?</button>    
+        <div class="content"> 
+            <div class="btn-back-div">
+                <a id="codepen-button" href="index.html"><span>Goto Homepage...</span></a>
+            </div>
         </div>
     </div>
 
@@ -39,31 +41,31 @@
                 <h2>GameEngine</h2><br><br>
                 <h5>What is a GameEngine?</h5>
                 <p>
-                    A GameEngine is a complex software system designed to simplify the developement of video games.<br>
-                    It is composed by other software subsystems/components.<br>
-                    In software engineering a software component is a software package module/subsystem that encapsulates a set of interfaces functions or data related to a specific functionality.<br>
-                    These are the main software components that compose a game engine:
+                    A GameEngine Is A Complex Software System Designed To Simplify The Developement Of Video Games.<br>
+                    It Is Composed By Other Software Subsystems Components.<br>
+                    In Software Engineering A Software Component Is A Software Package Module Subsystem That Encapsulates A Set Of Interfaces Functions Or Data Related To A Specific Functionality.<br>
+                    These Are The Main Software Components That Compose A Game Engine: 
                 </p>
                 <h5>graphics engine:</h5>
-                <img src="./images/icons/graphicsEngine.webp" alt="Image couldn't load...">
+                <img src="./images/icons/graphicsEngine.webp" alt="Image couldn't load..." class="icons">
                 <br><hr><br>
                 <h5>physics engine:</h5>
-                <img src="./images/icons/physicsEngine.webp" alt="Image couldn't load...">
+                <img src="./images/icons/physicsEngine.webp" alt="Image couldn't load..." class="icons">
                 <br><hr><br>
                 <h5>input system:</h5>
-                <img src="./images/icons/inputSystem.webp" alt="Image couldn't load...">
+                <img src="./images/icons/inputSystem.webp" alt="Image couldn't load..." class="icons">
                 <br><hr><br>
                 <h5>gui system:</h5>
-                <img src="./images/icons/GUI-System.webp" alt="Image couldn't load...">
+                <img src="./images/icons/GUI-System.webp" alt="Image couldn't load..." class="icons">
                 <br><hr><br>
                 <h5>audio system:</h5>
-                <img src="./images/icons/audioSystem.webp" alt="Image couldn't load...">
+                <img src="./images/icons/audioSystem.webp" alt="Image couldn't load..." class="icons">
                 <br><hr><br>
                 <h5>entity - component system:</h5>
-                <img src="./images/icons/entitySystem.webp" alt="Image couldn't load...">
+                <img src="./images/icons/entitySystem.webp" alt="Image couldn't load..." class="icons">
                 <br><hr><br>
                 <h5>network system:</h5>
-                <img src="./images/icons/networkSystem.webp" alt="Image couldn't load...">
+                <img src="./images/icons/networkSystem.webp" alt="Image couldn't load..." class="icons">
             </div>
         </div>
     </section>
