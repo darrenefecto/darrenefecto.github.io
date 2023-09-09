@@ -10,19 +10,7 @@ function MobileMenu() {
     }
 
 
-}
-
-function mobileDetect() {
-  if(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)){
-    var rainbowButton = document.getElementById('codepen-button');
-    if (!rainbowButton) return;
-    rainbowButton.style.setProperty('--animationPlayState', 'running');
-  }else{
-    var rainbowButton = document.getElementById('codepen-button');
-    if (!rainbowButton) return;
-    rainbowButton.style.setProperty('--animationPlayState', 'paused');
   }
-}
 
 function transfer(site)
 {   

@@ -35,7 +35,7 @@ body {
 
 .nav ul li {
     list-style-type: none;
-    display: inline-block;
+    display: inline-flex;
     padding: 10px 25px;
 }
 
@@ -59,11 +59,9 @@ body {
 
 #logo {
     color: #fff;
-    width: 30%;
-    height: 30%;
+    max-height: 40px;
     letter-spacing: 1px;
     margin-top: -25px;
-    cursor: pointer;
 }
 
 
@@ -99,41 +97,6 @@ body {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     text-shadow: 0 0 5px black;
 }
-
-.btn-learn-div {
-    display: inline-table;
-    position: absolute;
-    top: 90%;
-    left: 25%;
-    transform: translateY(-40%);
-}
-
-.btn-learn {
-    background-color: #1f1f1f;
-    border: none;
-    color: white;
-    padding: 15px 32px;
-    width: 300px;
-    height: 100px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 20px;
-    border-radius: 12px;
-    box-shadow: 0px 0px 100px 30px black;
-    position: absolute;
-    left: 20%;
-    top: 250%;
-    transform: translateY(-250%);
-    transition: .2s all;
-    overflow: hidden;
-    cursor: pointer;
-}
-
-.btn-learn:hover {
-    background-color: #141414;
-}
-
 
 #about {
     width: 100%;
@@ -355,21 +318,6 @@ footer img {
         color: rgb(218, 218, 218);
         letter-spacing: 2px;
         font-size: 30px;
-    }
-
-    .btn-learn-div {
-        display: inline-table;
-        position: absolute;
-        top: 80%;
-        left: 25%;
-        transform: translateY(-40%);
-    }
-
-    .btn-learn {
-        width: 200px;
-        height: 50px;
-        font-size: 18px;
-        box-shadow: 0px 0px 70px 22px black;
     }
     
     #about img {
