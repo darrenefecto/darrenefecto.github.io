@@ -146,13 +146,13 @@ body {
     text-transform: capitalize;
 }
 
-#materials {
+#myWork {
     width: 100%;
     padding: 100px 0;
     background-color: #171717;
 }
 
-.materials-title h2 {
+.myWork-title h2 {
     color: #fff;
     font-size: 75px;
     width: 1130px;
@@ -161,7 +161,16 @@ body {
     text-shadow: 0px 0px 10px gray;
 }
 
-.materials-content {
+.myWork-title h3 {
+    color: #d2d2d2;
+    font-size: 55px;
+    width: 1130px;
+    margin: 30px auto;
+    text-align: center;
+    text-shadow: 0px 0px 10px gray;
+}
+
+.myWork-content {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -169,7 +178,7 @@ body {
 }
 
 
-.materials-box {
+.myWork-box {
     max-width: 70%;
     height: 300px;
     overflow-x: auto;
@@ -180,7 +189,7 @@ body {
     background-color: rgba(0, 0, 0, 0.15);
 }
 
-.materials-box img {
+.myWork-box img {
     width: 250px;
     height: 250px;
     aspect-ratio: 3/2;
@@ -366,7 +375,7 @@ footer img {
 
 
 
-    .materials-box {
+    .myWork-box {
         min-width: 250px;
         max-width: 750px;
         height: 300px;
@@ -377,7 +386,7 @@ footer img {
         top: 50px;
     }
 
-    .materials-title h2 {
+    .myWork-title h2 {
         color: #fff;
         font-size: 35px;
         width: auto;
@@ -385,7 +394,15 @@ footer img {
         text-align: center;
     }
 
-    .materials-box img {
+    .myWork-title h3 {
+        color: #fff;
+        font-size: 25px;
+        width: auto;
+        margin: 30px auto;
+        text-align: center;
+    }
+
+    .myWork-box img {
         min-width: 250px;
         height: 250px;
         aspect-ratio: 3/2;

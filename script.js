@@ -12,14 +12,9 @@ function MobileMenu() {
 
   }
 
-function transfer(site)
+function transferTo(site)
 {   
-  if (site)
-    window.location.href = "more.html";
-  
-  if (!site)
-    window.location.href = "index.html";
-
+  window.location.href = site;
 }
 
 function cacheData() {
